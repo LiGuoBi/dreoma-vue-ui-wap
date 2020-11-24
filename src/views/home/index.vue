@@ -2,7 +2,7 @@
 <template>
   <div class="nav-page">
     <div class="logo">
-      <img src="@/assets/img/logo.png" alt="logo">
+      <!-- <img src="@/assets/img/logo.png" alt="logo"> -->
     </div>
     <!-- 路由列表循环导航 -->
     <template v-for="(route, index) in routes">
