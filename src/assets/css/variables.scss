@@ -1,0 +1,27 @@
+// 字体大小
+$h1: 0.3rem;
+
+$fs-lg: 0.32rem;
+$fs-base: 0.28rem; // 标准字号
+$fs-sm: 0.24rem;
+$fs-mini: 0.2rem;
+
+// 颜色
+$bg: #f5f5f5;
+$white: #fff;
+$black: #101010;
+
+@mixin wh ($w: 100px, $h: $w) {
+  width: $w;
+  height: $h;
+}
+@mixin bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@mixin placeholder($color: $input-color-placeholder) {
+  &::-moz-placeholder           { color: $color; } // Firefox
+  &:-ms-input-placeholder       { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
+}
